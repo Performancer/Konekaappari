@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konekaappari</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <link rel="icon" href="images/flag_02.gif">
+</head>
+<body>
+<header>
+    <img id="lippu" src="images/flag_02.png">
+    <h1>konekaappari</h1>
+</header>
+<nav>
+    <input id="searchField" class="navItems" type="text">
+    <p id="searchResult" class="navItems"></p>
+    <br />
+    <button id="searchButton" class="navItems">Hae</button>
+    <div class="dropdown">
+        <button id="filters">Suotimet</button>
+        <ul id="dropdownContent">
+            <li><button id="ground">Maissa - ON</button></li>
+            <li><button id="flight">Lennossa - OFF</button></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- haetaan käyttäjän paikkatiedot ja näytetään ne OpenStreetMapin ja Leaflet.js:n avulla -->
+<div id="map" style="width: 100%; height: 300px;"></div>
+
+<div class="hidden_mobile" id="info">
+    <p>lentokoneen tiedot<p>
+    <table id="infotable">
+        <tr>
+            <td>ID:</td>
+            <td class="tiedot" id="idinfo"></td>
+        </tr>
+        <tr>
+            <td>callsign:</td>
+            <td class="tiedot" id="callsigninfo"></td>
+        </tr>
+        <tr>
+            <td>maa:</td>
+            <td class="tiedot" id="countryinfo"></td>
+        </tr>
+        <tr>
+            <td>lähtöpaikka:</td>
+            <td class="tiedot" id="depinfo"></td>
+        </tr>
+        <tr>
+            <td>määränpää:</td>
+            <td class="tiedot" id="arrinfo"></td>
+        </tr>
+        <tr>
+            <td>sijainti:</td>
+            <td class="tiedot" id="latlnginfo"></td>
+        </tr>
+        <tr>
+            <td>korkeus:</td>
+            <td class="tiedot" id="altitudeinfo"></td>
+        </tr>
+        <tr>
+            <td>nopeus:</td>
+            <td class="tiedot" id="velocityinfo"></td>
+        </tr>
+    </table>
+</div>
+
+<footer>
+    <nav>
+        <ul>
+            <li><a href="index.html">Koti</a></li>
+            <li><a href="esittely.html">Esittely</a></li>
+            <li><a href="ohjeet.html">Ohjeet</a></li>
+            <li><a href="tekijat.html">Tekijät</a></li>
+            <li><a href="palaute.html">Palaute</a></li>
+        </ul>
+    </nav>
+    <p>© 2018 Senilix. All Rights Reserved.</p>
+    <p>All trademarks are the property of their respective owners.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.3/leaflet.js"></script>
+<script src="js/leaflet.rotatedmarker.js"></script>
+<script src="js/filter.js"></script>
+<script src="js/plane.js"></script>
+<script src="js/map.js"></script>
+<script src="js/data.js"></script>
+<script src="js/customMarker.js"></script>
+<script src="js/userInterface.js"></script>
+<script src="js/flightData.js"></script>
+<script src="js/main.js"></script>
+<script src="js/mapEventHandling.js"></script>
+</body>
+</html>

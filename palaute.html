@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Palaute</title>
+    <link rel="icon" href="images/flag_02.gif">
+</head>
+
+<header>
+    <a href="index.html">
+        <img id="lippu" src="images/flag_02.png">
+        <h1>konekaappari</h1>
+    </a>
+</header>
+
+<nav>
+    <br>
+</nav>
+
+<body>
+<article>
+    <h2>palaute</h2>
+    <p>
+        Anna meille palautetta Konekaapparin käytöstä tällä yksinkertaisella lomakkeella
+        (vaikkemme palautteestanne sen suuremmin välitäkään).
+    </p>
+</article>
+<form method="post" action="php/mailto.php" target="_blank">
+    <div>
+        <table>
+            <tr>
+                <th>etunimi:</th>
+            </tr>
+            <tr>
+                <td><input type="text" name="firstName"></td>
+            </tr>
+            <tr>
+                <th>sukunimi:</th>
+            </tr>
+            <tr>
+                <td><input type="text" name="lastName"></td>
+            </tr>
+            <tr>
+                <th>ikä:</th>
+            </tr>
+            <tr>
+                <td><input type="text" name="age"></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th>sukupuoli:</th>
+            </tr>
+            <tr>
+                <td><input type="radio" name="gender" value="male">Mies</td>
+                <td><input type="radio" name="gender" value="female">Nainen</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th>kuinka usein käytät konekaapparia?</th>
+            </tr>
+            <tr>
+                <td><input type="radio" name="usage" value="few times a year">Muutaman kerran vuodessa</td>
+                <td><input type="radio" name="usage" value="two to four times a month">2 - 4 kertaa kuussa</td>
+                <td><input type="radio" name="usage" value="five to seven times a week">5 - 7 kertaa viikossa</td>
+                <td><input type="radio" name="usage" value="constantly">En pysty lopettamaan</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th>mikä on kokemuksesi konekaapparin toiminnasta?</th>
+            </tr>
+            <tr>
+                <td>Erittäin hyvä</td>
+                <td><input type="radio" name="functionality" value="1"></td>
+                <td><input type="radio" name="functionality" value="2"></td>
+                <td><input type="radio" name="functionality" value="3"></td>
+                <td><input type="radio" name="functionality" value="4"></td>
+                <td><input type="radio" name="functionality" value="5"></td>
+                <td>Täydellinen</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h4>mitä konekaapparin toimintoja haluaisit parannettavan?</h4>
+        <ul>
+            <li><input type="checkbox" name="improve[]" value="perfect">Täydellisestä ei pääse paremmaksi</li>
+            <li><input type="checkbox" name="improve[]" value="nothing">En mitään</li>
+            <li><input type="checkbox" name="improve[]" value="Highest grade">Voiko viitosta parempaa arvosanaa saada?</li>
+            <li><input type="checkbox" name="improve[]" value="Not possible">Vaikea sanoa</li>
+            <li><input type="checkbox" name="improve[]" value="To die for">Tällaisen sivuston puolesta kuolisi mielellään</li>
+            <li><input type="checkbox" name="improve[]" value="Bad question">Typerä kysymys</li>
+        </ul>
+    </div>
+    <div>
+        <input id="submit" type="submit" name="submit" value="Lähetä">
+    </div>
+</form>
+<footer>
+    <nav>
+        <ul>
+            <li><a href="index.html">Koti</a></li>
+            <li><a href="esittely.html">Esittely</a></li>
+            <li><a href="ohjeet.html">Ohjeet</a></li>
+            <li><a href="tekijat.html">Tekijät</a></li>
+            <li><a href="palaute.html">Palaute</a></li>
+        </ul>
+    </nav>
+
+    <p>© 2018 Senilix. All Rights Reserved.</p>
+    <p>All trademarks are the property of their respective owners.</p>
+</footer>
+
+</body>
+</html>

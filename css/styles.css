@@ -1,0 +1,371 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: #333399;
+}
+
+header {
+    height: 15%;
+    width: 100%;
+    color: white;
+    background: #333399 url("../images/background_03.gif") no-repeat;
+}
+
+h1 {
+    padding: 0.5rem 0 0 1rem;
+    text-align: left;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+}
+
+header a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: larger;
+    text-align: center;
+}
+
+nav{
+    padding: 0.5em;
+    width: 100%;
+    background-color: #1B0857;
+}
+
+article {
+    color: white;
+    background-color: #4c4ca7;
+    border-radius: 8px;
+    display: flex;
+    margin: 1em auto;
+    flex-flow: column;
+    justify-content: center;
+    width: 95%;
+}
+
+article > p {
+    padding: 1em;
+    margin: 0 auto;
+    color: #E4E445;
+}
+article a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    display: inline;
+    width: 50%;
+}
+
+form{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    padding:0.5em;
+    margin:0.5em;
+    background-color: #4c4ca7;
+    border-radius: 8px;
+}
+
+form h4 {
+    margin:0;
+    color:white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+form div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0.5em 0;
+}
+
+form table, form th, form tr {
+    display: inline-flex;
+    width:100%;
+    color:white;
+    font-family: 'Orbitron', sans-serif;
+    padding: 0.25em 0;
+    text-align: left;
+}
+
+form tbody{
+    width:100%;
+}
+
+form td {
+    display: flex;
+    flex-flow: column;
+    padding:0 0.5em;
+    color: #E4E445;
+    font-family: 'Rubik', sans-serif;
+}
+
+form div ul {
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    color: #E4E445;
+    font-family: 'Rubik', sans-serif;
+}
+
+form div li {
+    display: inline-flex;
+    width:calc(50% - 1em);
+    padding: 0.25em;
+}
+
+footer{
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    text-align: center;
+    color:white;
+    background-color: #1B0857;
+}
+
+nav a:link, nav a:visited {
+    color:white;
+    background-color: #1B0857;
+    display:block;
+    text-align:center;
+    text-decoration: none;
+    font-weight:bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+footer p {
+    font-size: 0.5em;
+    width:100%;
+}
+
+button{
+    border-radius: 4px;
+}
+
+li button {
+    border-radius: 0;
+}
+
+input {
+    border-radius: 8px;
+}
+
+#lippu {
+    float: left;
+    padding: 0.5rem 1rem 0 1rem;
+}
+
+.navItems{
+    width:40%;
+    box-sizing: border-box;
+    padding: 0 1rem;
+}
+
+#searchResult{
+    display: inline-block;
+    margin:0;
+    color: red;
+}
+
+.dropdown {
+    width: 50%;
+    position: relative;
+    display: inline-block;
+}
+
+#dropdownContent {
+    display: none;
+    flex-flow: row wrap;
+    align-items: stretch;
+    position: absolute;
+    background-color: darkgray;
+    z-index: 10;
+}
+
+#dropdownContent button {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    height:100%;
+    width:100%;
+    background-color:  #4c4ca7;
+    border-color: #1B0857;
+}
+
+#searchField {
+    padding: 0.2rem 0 0.2rem 0.2rem;
+    font-family: 'Rubik', sans-serif;
+    font-size: large;
+}
+
+#searchButton:hover, #filters:hover, #submit:hover {
+    color:  #E4E445;
+}
+
+#searchButton, #filters, #submit {
+    margin: 0.3rem 0 0 0;
+    padding: 0.2rem 1rem;
+    font-family: 'Rubik', sans-serif;
+    font-size: large;
+    color: white;
+    border: none;
+    background-color: #4c4ca7;
+    cursor: pointer;
+}
+
+#map {
+    z-index: 0;
+    width:100%;
+}
+
+.leaflet-marker-icon {
+    cursor: url("../images/cross_01.cur") 9 9, auto;
+}
+
+#info {
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    margin: 1rem;
+    background-color: #4c4ca7;
+    border-radius: 8px;
+    width: 100%;
+    min-width: 20rem;
+    padding: 0 1rem 1rem 1rem;
+    text-align: right;
+}
+
+#info p {
+    text-align: center;
+    font-size: larger;
+}
+
+.hidden_mobile {
+    display: none;
+}
+
+.visible_mobile {
+    display: initial;
+}
+
+.tiedot {
+    font-family: 'Rubik', sans-serif;
+    color: #E4E445;
+    padding-left: 1rem;
+    text-align: left;
+}
+
+#portraits {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
+
+#portraits > li {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+#portraits > li > img {;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+    margin: auto;
+}
+
+.visible > img {
+    margin: 0.5rem 0 0 0;
+    padding: 0;
+    cursor: pointer;
+    background-color: #4c4ca7;
+    max-width: 100%;
+}
+
+#tekijatiedot {
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    text-align: end;
+    margin: 0.5rem auto;
+    background-color:  #4c4ca7;
+    width: 100%;
+    padding: 1em 0;
+}
+
+#tiimi {
+    padding: 2em;
+    margin: auto;
+}
+
+#submit {
+    background-color: #1B0857;
+}
+
+@media only screen and (min-width: 762px) {
+
+    article {
+        width: 60%;
+    }
+
+    form {
+        margin:1em;
+    }
+
+    form div table td {
+        flex-flow: row;
+    }
+
+    form div li {
+        display:inline-block;
+        width:calc((100%/3) - 1.5em);
+    }
+
+    footer ul{
+        display: flex;
+    }
+
+    .navItems{
+        width:20%;
+    }
+
+    #info{
+        width: 40%;
+    }
+
+    .hidden_mobile {
+        display: initial;
+    }
+
+    .visible_mobile {
+        display: initial;
+    }
+
+    .visible > img {
+        padding: 0.5rem;
+    }
+
+}
